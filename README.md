@@ -1,6 +1,6 @@
 # Password Generator
 
-Have you ever needed or wanted to create a higly difficult password to protect your data but not been able to come up with one?? We have got you covered!
+Have you ever needed or wanted to create a highly difficult password to protect your data but not been able to come up with one?? We have got you covered!
 
 ## Description
 
@@ -18,7 +18,7 @@ Aida Olvera-Dyckes
 
 * HTML
 * CSS
-*JavaScript
+* JavaScript
 
 ## Pictures
 
