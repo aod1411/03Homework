@@ -16,15 +16,41 @@ function writePassword() {
   var nums = window.confirm("Click OK if you would like numbers in your password.");
   var specialCharacters = window.confirm("Click OK if you would like to use special characters in your password.");
 
+  var allChoices = "";
+
+
   console.log("LITTLE LETTERS",littleLetters)
   console.log("Password Length", length)
 
+if(littleLetters === true){
+  allChoices += lowerCase
+}
 
+if(bigLetters === true){
+  allChoices += upperCase
+}
 
-  // var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+if(nums === true){
+  allChoices += number
+}
 
-  passwordText.value = password;
+if(specialCharacters === true){
+  allChoices += specialChar
+}
+
+console.log("ALL CHOICES", allChoices)
+
+var characters = "";
+
+for(var i = 0; i < length; i++){
+  
+  var randomizer = Math.floor(allChoices.length * Math.random())
+
+characters += allChoices.charAt(randomizer)
+
+}
+
+  document.querySelector("#password").textContent = characters;
 
 }
 
